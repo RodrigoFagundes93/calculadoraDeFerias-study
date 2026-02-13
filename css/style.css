@@ -154,18 +154,15 @@ main{
     text-align: center;
 }
 
-.btn-calcular:hover{
+.btn-calcular:active{
     background-color: yellow ;
     color: rgb(0, 0, 0);
 }
-.btn-limpar:hover{
+.btn-limpar:active{
     background-color: red ;
     color: white;
 }
 
-.tela{
-
-}
 
 @media(max-width:476px){
     h1{
