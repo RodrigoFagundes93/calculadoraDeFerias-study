@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    
+}
+
+header{
+    color: white;
+    background-color: #1100ff;
+    padding: 3rem;
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+
+
+.calculadora-flex{
+    width: 100%;
+    max-width: 370px;
+    min-width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 2rem 8rem 2rem;
+    background-color: #0c0c0c;
+    border-radius: 35px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.tela{
+    display: block;
+    width: 100%;
+    min-height: 30rem;
+    background-color: rgb(252, 249, 249);
+    border-radius: 8px;
+    border: 1px solid grey;
+    flex: 1;
+    /*Texto da Tela*/
+    padding: 2rem 1rem;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+
+}
+
+.formulario-container{
+    flex: 1;
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(200px,1fr) minmax(40px,1fr);
+    margin-top: 5rem;
+    gap: 1.5rem ;
+
+    
+}
+
+
+.formulario{
+    flex: 2;
+    display: grid;
+    grid-template-rows: 40px 40px 40px;
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+
+
+}
+
+.form-salario,
+.form-dias,
+.form-nome{
+    padding: 0.5rem 1rem;
+    min-width: 0;
+    width: 100%;
+    flex: 1 1 4rem;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+
+}
+
+
+.form-nome:focus, .form-salario:focus,.form-dias:focus{
+    border: 3px solid #3442ff;
+}
+
+.botoes{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: minmax(20px,auto);
+    grid-template-rows: 40px 40px 40px;
+    gap: 2rem;
+    align-content: left;
+
+    
+}
+
+
+
+.btn-limpar{
+    grid-row: 1/2;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bolder;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+    letter-spacing: 0.1ch;
+    color:red;
+
+    text-align: center;
+}
+
+.btn-calcular{
+    grid-row: 2/4;
+    grid-column: 1/2;
+    border-radius: 8px;
+    border: none;
+    font-weight: bolder;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+    letter-spacing: 0.1ch;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+.btn-calcular:hover{
+    background-color: yellow ;
+    color: rgb(0, 0, 0);
+}
+.btn-limpar:hover{
+    background-color: red ;
+    color: white;
+}
+
+.tela{
+
+}
+
+@media(max-width:476px){
+    h1{
+        font-size: 2.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+

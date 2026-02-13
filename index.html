@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora de Férias</title>
+
+    <link rel="stylesheet" href="./css/style.css" class="css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Calculadora de Férias</h1>
+    </header>
+ 
+    <main>
+
+
+        <section class="calculadora-flex">
+
+            <output id="tela" class="tela" aria-live="polite"></output>
+
+            <form class="formulario-container" action="#">
+
+                <div class="formulario">
+               <input class="form-nome" type="text" name="nome" id="nome" placeholder="Nome completo" required maxlength="130" minlength="7">
+
+               <input class="form-salario" type="number" name="salario" id="salario" placeholder="Salario" required maxlength="60">
+
+               <input class="form-dias" type="number" name="dias" id="dias" placeholder="Dias de ferias" required >
+                </div>
+                
+                <div class="botoes">
+              
+               <button id="btn-limpar" class="btn-limpar" type="button">Limpar</button>
+
+                <button  id="btn-calcular" class="btn-calcular" type="button">Calcular</button>
+               </div>
+          
+
+            </form>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
